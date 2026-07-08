@@ -15,6 +15,7 @@
   - `preferences.timeZone`: String - Not Null, Default `Asia/Taipei`, 時區，採 IANA 格式
   - `preferences.theme`: String - Not Null, Default `theme1`, 主題識別碼
   - `preferences.launchMode`: String - Not Null, Default `home`, 啟動模式，可為 `home`、`expense`、`income`、`transfer`
+  - `preferences.weekStart`: String - Not Null, Default `auto`, 週起始日偏好，可為 `auto`、`sunday`、`monday`；`auto` 代表依使用者語系慣例決定
   - `preferences.analyticsConsent`: Boolean - Not Null, Default `true`, 分析同意開關，控制記帳資料是否納入分析管線
   - `iap_entitlements_json`: String | Null - Nullable, JSON, 序列化後的 IAP 權限狀態
   - `iap_active_purchases_json`: String | Null - Nullable, JSON, 序列化後的作用中訂閱

@@ -7,9 +7,9 @@
 - **欄位:**
   - `uid`: String, Auth UID - Primary Key, Not Null, 與 Document ID 相同
   - `email`: String - Not Null, 使用者 Email
-  - `displayName`: String | Null - Nullable, 顯示名稱，來自 Google 帳號
-  - `photoURL`: String | Null - Nullable, 大頭照 URL，來自 Google 帳號
-  - `provider`: String - Not Null, 認證提供者
+  - `displayName`: String | Null - Nullable, 顯示名稱，來自認證提供者
+  - `photoURL`: String | Null - Nullable, 大頭照 URL，來自認證提供者，Apple 帳號無此值
+  - `provider`: String - Not Null, 認證提供者識別碼，可為 `google.com`、`apple.com`
   - `preferences.language`: String - Not Null, Default `zh-TW`, 介面語言，支援 `zh-TW` 與 `en`
   - `preferences.currency`: String - Not Null, Default `TWD`, 主要貨幣 ISO 4217 代碼
   - `preferences.timeZone`: String - Not Null, Default `Asia/Taipei`, 時區，採 IANA 格式
